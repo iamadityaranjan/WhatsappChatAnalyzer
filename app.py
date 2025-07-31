@@ -55,6 +55,7 @@ if uploaded_file is not None:
                 # Generate random colors for each bar
                 random_colors = ['#%06X' % random.randint(0, 0xFFFFFF) for _ in range(len(x))]
                 ax.bar(x.index,x.values,color=random_colors)
+                plt.xticks(rotation = "vertical")
                 st.pyplot(fig)
                 
             with col2:
