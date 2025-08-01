@@ -6,6 +6,7 @@ import seaborn as sns
 
 st.sidebar.title("Whatsapp Chat Analyzer")
 uploaded_file = st.sidebar.file_uploader("Choose a file")
+st.sidebar.subheader("This app is only for PC!")
 
 if uploaded_file is not None:
     # Read uploaded file as bytes
